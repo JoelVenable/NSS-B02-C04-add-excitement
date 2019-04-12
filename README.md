@@ -1,1 +1,86 @@
-# NSS-B02-C04-add-excitement
+# Practice: Some words are more exciting than others
+
+> The learning objective of this exercise is to use the JavaScript `if` statement inside a loop to do one operation when a certain conditions is true, and a different operation if that condition is false.
+
+Add logic to `addExcitement` that places an exclamation point (!) after every third word. Read the following English statement and write the equivalent in JavaSript code to make it work.
+
+If the current value of the [counter variable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) can be evenly divided by 3 (_using the JavaScript [remainder](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder) operator_) add a single exclamation point (!) to the current word in the array.
+
+```js
+let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+function addExcitement (theWordArray) {
+    let buildMeUp = ""
+
+    for (let i = 0; i < theWordArray.length; i++) {
+        /*
+            If the current value of `i` divided by 3 has no
+            remainder, add an exclamation point to the end of
+            the word and then concatenate it to `buildMeUp`.
+
+            Otherwise, just concatenate the word itself.
+         */
+
+
+        // Print buildMeUp to the console
+    }
+
+}
+
+addExcitement(sentence)
+```
+
+> **Example output:**
+>
+> The
+>
+> The walrus
+>
+> The walrus danced!
+>
+> The walrus danced! through
+>
+> The walrus danced! through the
+>
+> The walrus danced! through the trees!
+>
+> The walrus danced! through the trees! in
+>
+> The walrus danced! through the trees! in the
+>
+> The walrus danced! through the trees! in the light!
+>
+> The walrus danced! through the trees! in the light! of
+>
+> The walrus danced! through the trees! in the light! of the
+>
+> The walrus danced! through the trees! in the light! of the moon!
+
+## Practice: Function Arguments
+
+> The learning objective of this exercise is to practice defining and using function arguments.
+
+Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
+
+```js
+// I want to use a question mark
+addExcitement(sentence, "?")
+```
+
+> **Example output:**
+>
+> The
+>
+> The walrus
+>
+> The walrus danced?
+>
+> The walrus danced? through
+>
+> The walrus danced? through the
+>
+> The walrus danced? through the trees?
+>
+> The walrus danced? through the trees? in
+>
+> etc..
